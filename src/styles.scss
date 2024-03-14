@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(./assets/style/reset.scss);
+
+body {
+    color: #252424;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+
+}
+
+.btn {
+    background-color: #EBEBEB;
+    border: 1px solid #252424;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    min-width: 110px;
+
+}
+
+.ngx-file-drop__drop-zone {
+    width: 25rem;
+    height: 17rem;
+    border: 1px dashed #252424;
+
+}
+
+.ngx-file-drop__drop-zone[_ngcontent-ng-c2614662205] {
+    color: #252424;
+
+}
+
+.custom-drop-zone {
+    padding: 1rem;
+    height: 17.375rem;
+    border: 1px dashed #252424;
+
+}
+
+.custom-content {
+    text-align: center;
+    color: #252424;
+    transform: translate(0%, 100%);
+
+    & span {
+        display: inline-block;
+        max-width: 16rem;
+        text-align: center;
+        margin-bottom: 1rem;
+
+    }
+
+}
