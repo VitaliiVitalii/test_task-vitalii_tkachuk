@@ -1,0 +1,17 @@
+<div class="center">
+    <ngx-file-drop 
+        dropZoneLabel="Drop files here" 
+        (onFileDrop)="dropped($event)" 
+        (onFileOver)="fileOver($event)"
+        (onFileLeave)="fileLeave($event)"
+        accept=".cer"
+        dropZoneClassName="custom-drop-zone"
+        contentClassName="custom-content"
+        >
+        <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+            <span>Перетягніть файл сертифікату сюди або</span>
+            <button class="btn" type="button" (click)="openFileSelector()">Виберіть через стандартний діалог</button>
+        </ng-template>
+    </ngx-file-drop>
+</div>
+

@@ -1,0 +1,6 @@
+<div *ngIf="selectedCertificate" class="certificate__info">
+    <p class="certificate__info-item"><strong>Common Name:</strong> {{ selectedCertificate.subjectName }}</p>
+    <p class="certificate__info-item"><strong>Issuer CN:</strong> {{ selectedCertificate.issuerName }}</p>
+    <p class="certificate__info-item"><strong>Valid from:</strong> {{ selectedCertificate.validFrom }}</p>
+    <p class="certificate__info-item"><strong>Valid to:</strong> {{ selectedCertificate.validTo }}</p>
+</div>

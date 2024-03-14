@@ -1,0 +1,23 @@
+.certificate__info{
+    font-size: 1.125rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    border: 1px solid #252424;
+    height: 100%;
+
+    &-item {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 5px;
+
+        &:hover {
+                white-space: normal;
+                overflow: visible;
+                text-overflow: inherit;
+                
+        }
+
+    }
+
+}

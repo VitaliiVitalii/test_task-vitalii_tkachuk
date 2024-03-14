@@ -1,0 +1,15 @@
+<div class="certificates">
+    <div class="certificate__add">
+        <button (click)="onAddButtonClick()" class="btn">{{ buttonText }}</button>
+    </div>
+    <div class="certificates__wrapper" *ngIf="isVisible">
+        <p *ngIf="certificates.length === 0" class="certificate__text">Немає жодного сертифікату</p>
+        <div *ngFor="let item of certificates; let i=index" class="certificates__list" (click)="selectCertificate(i)"
+            [class.selected]="selectedCertificateIndex === i">
+            <span class="certificates__name">{{ item.subjectName }}</span>
+            <span *ngIf="selectedCertificateIndex === i" class="arrow-icon">
+                <img src="../../../../assets/img/right-arrow.png" alt="arrow">
+            </span>
+        </div>
+    </div>
+</div>

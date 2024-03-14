@@ -1,0 +1,51 @@
+.certificates {
+    width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    
+    &__list {
+        border: 1px solid #252424;
+        border-bottom: none;
+        height: 2.25rem;
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+        cursor: pointer;
+
+        &:last-child {
+            border-bottom: 1px solid #252424;
+
+        }
+
+        &.selected {
+            background-color: #EBEBEB;
+
+            
+        }
+
+    }
+
+    &__name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 18.125rem;
+
+    }
+
+}
+
+.arrow-icon {
+    width: 10px;
+    height: 10px;
+    
+    img {
+        width: 100%;
+
+    }
+    
+}
